@@ -39,7 +39,8 @@ const HeaderList = styled.ul`
 const HeaderLink = styled(Link)<Props>`
   font-size: 18px;
   font-weight: 500;
-  color: ${({ pathname }) => (pathname ? "red" : "gold")};
+  color: #fff;
+  text-shadow: ${({ pathname }) => (pathname ? "0 0 10px white" : "")};
   text-decoration: none;
   text-transform: uppercase;
 `;
